@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "please enter the name of the user to view details"
- USR_NAME=$1
+ USR_NAME="Adesh"
 echo "$USR_NAME"
 NAME=$(cat employs.csv |grep -i "$USR_NAME"|cut -d ',' -f 1 )
 LAST_NAME=$(cat employs.csv |grep -i "$USR_NAME"|cut -d ',' -f 2)
