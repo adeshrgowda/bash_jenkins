@@ -2,7 +2,7 @@
 echo "please enter the name of the user to view details"
  USR_NAME="$1"
 echo "$USR_NAME"
-rm -f user.txt
+rm -rf user.txt
 #rm -rf user_details.txt
 NAME=$(cat employs.csv |grep -i "$USR_NAME"|cut -d ',' -f 1 )
 LAST_NAME=$(cat employs.csv |grep -i "$USR_NAME"|cut -d ',' -f 2)
