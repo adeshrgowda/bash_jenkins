@@ -1,11 +1,7 @@
 #! /bin/bash
-echo "ENTER THE USERNAME"
-read USR_NAME
-cat employs.csv
-echo "ENTER THE OLD SALARY"
-read OLD_SAL
-echo "ENTER THE NEW SALARY"
-read NEW_SAL
+USR_NAME="$1"
+OLD_SAL="$2"
+NEW_SAL="$3"
 sed -i "/$USR_NAME/s/$OLD_SAL/$NEW_SAL/g" employs.csv
 cat employs.csv
 rm -rf updated_list.txt
